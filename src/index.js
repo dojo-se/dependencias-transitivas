@@ -16,9 +16,9 @@ C   G
 D   A B C E F G H
 E   F H
 F   H
-`;
-
-
+`; 
 
 export const main = () => output;
+
+export const parseLine = input => input.split('\n').filter(input => input.length > 0)
 
