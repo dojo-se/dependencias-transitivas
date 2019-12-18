@@ -1,16 +1,16 @@
 
-import { input, output, main } from './index'
+import { output, main } from './index'
 
 
-describe("@", ()=> {
-  test("Teste inicial", ()=> {
+describe("@ DOJO", ()=> {
+  test("initial test", ()=> {
     expect(true).toEqual(true);
-  })
+  });
 
-  test("Espera a saída correta", () => {
+  test("expect to be expected result", () => {
     const expectResult = main();
     expect(expectResult).toEqual(output);
-  })
+  });
 
 
 })
