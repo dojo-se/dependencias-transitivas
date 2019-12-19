@@ -35,3 +35,22 @@ O conjunto de dependências completo para cada classe, para o conjunto anterior 
 
 ```
 
+----
+
+## Retrospectiva
+
+### O que foi bom
+- Interação
+- Aprendizado sobre testes
+- Network
+- Melhorar o codigo para o Intelisense
+- Interação da equipe com a resolução dos problemas
+- Experiência com o Dojo
+- Aprender a usar o Jest
+- Exercitar a lógica de programação
+- Escrever o teste antes de resolve TDD
+
+### O que pode melhorar
+- Ambiente previamente configurado
+- Integrar o Prettier
+- Trocar o OS da maquina
