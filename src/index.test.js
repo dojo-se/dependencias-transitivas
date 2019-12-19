@@ -1,5 +1,5 @@
 
-import { output, main, parseLine } from './index'
+import { output, main, parseLine,fnLetter } from './index'
 
 
 describe("@ DOJO", ()=> {
@@ -22,9 +22,14 @@ D E F
 
     const out = ['A B C', 'D E F'];
 
-
     expect(res).toEqual(out);
   });
 
+  test("expect result to letter", () => {
+    const inp = 'D E F';
+    const out = ['D', 'E', 'F'];
+    const expectResultLetter = fnLetter(inp); 
+    expect(expectResultLetter).toEqual(out);
+  });
 
 })
