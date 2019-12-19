@@ -28,3 +28,6 @@ export const fnLetter = (input) => input.split(' ');
 
 export const parseToArrays = (input) =>  parseLine(input).map(arr => fnLetter(arr))
 
+// export const mkDictionary = input =>  input.map(el => {
+//   [el[0]]: el.shift(1,0)
+// })

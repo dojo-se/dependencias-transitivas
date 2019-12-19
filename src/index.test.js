@@ -1,5 +1,5 @@
 
-import { output, main, parseLine,fnLetter, parseToArrays } from './index'
+import { output, main, parseLine,fnLetter, parseToArrays, mkDictionary } from './index'
 
 
 describe("@ DOJO", ()=> {
@@ -41,5 +41,13 @@ D E F
     const expectResultLetter = parseToArrays(inp); 
     expect(expectResultLetter).toEqual(out);
   });
+
+  // test("expect result to be a dictionary", () => {
+  //   const inp = [['A','B','C'], ['D','E','F']];
+  //   const out = {'A': ['B', 'C'], 'D': ['E', 'F']}
+  //   const expectResultLetter = mkDictionary(inp);
+  //   console.log(expectResultLetter)
+  //   // expect(expectResultLetter).toEqual(out);
+  // });
 
 })
