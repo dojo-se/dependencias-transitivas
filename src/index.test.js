@@ -1,5 +1,5 @@
 
-import { output, main, parseLine,fnLetter } from './index'
+import { output, main, parseLine,fnLetter, parseToArrays } from './index'
 
 
 describe("@ DOJO", ()=> {
@@ -29,6 +29,16 @@ D E F
     const inp = 'D E F';
     const out = ['D', 'E', 'F'];
     const expectResultLetter = fnLetter(inp); 
+    expect(expectResultLetter).toEqual(out);
+  });
+
+  test("expect result to be a vector of vectors", () => {
+    const inp = `
+A B C
+D E F
+`;
+    const out = [['A','B','C'], ['D','E','F']];
+    const expectResultLetter = parseToArrays(inp); 
     expect(expectResultLetter).toEqual(out);
   });
 

@@ -20,7 +20,11 @@ F   H
 
 export const main = () => output;
 
-export const parseLine = input => input.split('\n').filter(input => input.length > 0)
+export const parseLine = (input = '') =>
+  input.split('\n')
+  .filter(input => input.length > 0)
 
 export const fnLetter = (input) => input.split(' ');
+
+export const parseToArrays = (input) =>  parseLine(input).map(arr => fnLetter(arr))
 
